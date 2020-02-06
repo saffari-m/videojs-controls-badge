@@ -1,6 +1,6 @@
 {
   "name": "@filmgardi/videojs-controls-badge",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The `controls-badge` plugin show current value of multiple value component as badge icon.",
   "main": "dist/videojs-controls-badge.cjs.js",
   "module": "dist/videojs-controls-badge.es.js",
