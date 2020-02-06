@@ -14,7 +14,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm-run-all -p build:*",
-    "build:css": "postcss -o dist/videojs-controls-badge.css --config scripts/postcss.config.js src/plugin.css",
+    "build:css": "postcss -o dist/videojs-controls-badge.css --config scripts/postcss.config.js src/plugin.scss",
     "build:js": "rollup -c scripts/rollup.config.js",
     "build:lang": "vjslang --dir dist/lang",
     "clean": "shx rm -rf ./dist ./test/dist",
@@ -37,7 +37,9 @@
     "watch:css": "npm run build:css -- -w",
     "watch:js": "npm run build:js -- -w",
     "prepublishOnly": "npm-run-all build test:verify",
-    "copy": "shx cp ./dist/videojs-controls-badge.cjs.js  ../test-env-project/src/"
+    "copy": "npm-run-all copy:*",
+    "copy:js": "shx cp ./dist/videojs-controls-badge.cjs.js  ../test-env-project/src/",
+    "copy:css": "shx cp ./dist/videojs-controls-badge.css  ../test-env-project/src/"
   },
   "engines": {
     "node": ">=8",

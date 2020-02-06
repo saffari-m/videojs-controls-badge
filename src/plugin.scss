@@ -1,0 +1,37 @@
+/**
+ * css for videojs-controls-badge
+ * With the default plugins for postcss you can
+ * - @import files, they will be inlined during build
+ * - not worry about browser prefixes, they will be handled
+ * - nest selectors. This follows the css specification that is
+ *   currently out on some browsers. See https://tabatkins.github.io/specs/css-nesting/
+ * - custom properties (aka variables) via the var(--var-name) syntax. See
+ *   https://www.w3.org/TR/css-variables-1/
+ */
+
+/* Note: all vars must be defined here, there are no "local" vars */
+
+.video-js {
+	&.vjs-controls-badge {
+		/* This class is added to the video.js element by the plugin by default. */
+		display: block;
+	}
+}
+
+.video-js button.vjs-subtitle-setting-button .vjs-control-text,
+.video-js button.vjs-subs-caps-button .vjs-control-text {
+	width: 2em;
+	height: 1em;
+	top: 0;
+	right: 0;
+	clip: auto;
+	background: #eee;
+	color: #333;
+	padding: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.video-js .vjs-quality-selector .vjs-icon-placeholder::before {
+	content: "\f110";
+}
