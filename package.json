@@ -1,6 +1,6 @@
 {
   "name": "@filmgardi/videojs-controls-badge",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The `controls-badge` plugin show current value of multiple value component as badge icon.",
   "main": "dist/videojs-controls-badge.cjs.js",
   "module": "dist/videojs-controls-badge.es.js",
@@ -22,7 +22,7 @@
     "docs": "npm-run-all docs:*",
     "docs:api": "jsdoc src -g plugins/markdown -r -d docs/api",
     "docs:toc": "doctoc --notitle README.md",
-    "lint": "vjsstandard",
+    "lint": "vjsstandard --fix",
     "server": "karma start scripts/karma.conf.js --singleRun=false --auto-watch",
     "start": "npm-run-all -p server watch",
     "pretest": "npm-run-all lint build",

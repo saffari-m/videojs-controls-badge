@@ -6,6 +6,7 @@ The `controls-badge` plugin show current value of multiple value component as ba
 
 <!-- START doctoc -->
 <!-- END doctoc -->
+
 ## Installation
 
 ```sh
@@ -24,11 +25,17 @@ This is the simplest case. Get the script in whatever way you prefer and include
 <script src="//path/to/video.min.js"></script>
 <script src="//path/to/videojs-controls-badge.min.js"></script>
 <script>
-  var player = videojs('my-video');
+	var player = videojs('my-video');
 
-  player.controlsBadge();
+	player.controlsBadge();
 </script>
 ```
+
+### Screenshot
+
+Result of using `videojs-controls-badge` plugin:
+
+![Example](screen-shot-1.png)
 
 ### Browserify/CommonJS
 
@@ -53,15 +60,14 @@ When using with RequireJS (or another AMD library), get the script in whatever w
 
 ```js
 require(['video.js', '@filmgardi/videojs-controls-badge'], function(videojs) {
-  var player = videojs('my-video');
+	var player = videojs('my-video');
 
-  player.controlsBadge();
+	player.controlsBadge();
 });
 ```
 
 ## License
 
 MIT. Copyright (c) m-saffari &lt;mohamadsaffari90@gmail.com&gt;
-
 
 [videojs]: http://videojs.com/

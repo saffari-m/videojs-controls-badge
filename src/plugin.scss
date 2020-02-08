@@ -18,12 +18,12 @@
 	}
 }
 
-.video-js button.vjs-subtitle-setting-button .vjs-control-text,
-.video-js button.vjs-subs-caps-button .vjs-control-text {
+.video-js button .vjs-badge-text {
+	position: relative;
 	width: 2em;
 	height: 1em;
-	top: 0;
-	right: 0;
+	top: -1em;
+	right: -1em;
 	clip: auto;
 	background: #eee;
 	color: #333;
@@ -33,5 +33,6 @@
 }
 
 .video-js .vjs-quality-selector .vjs-icon-placeholder::before {
-	content: "\f110";
+	content: '\f110';
+	font-family: videojs;
 }
