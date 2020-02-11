@@ -35,7 +35,7 @@ This is the simplest case. Get the script in whatever way you prefer and include
 
 Result of using `videojs-controls-badge` plugin:
 
-![Example](screen-shot-1.png)
+![Example](https://github.com/saffari-m/videojs-controls-badge/raw/develop/screen-shot-1.png)
 
 ### Browserify/CommonJS
 
